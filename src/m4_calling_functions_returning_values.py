@@ -278,14 +278,14 @@ def run_test_fancy_sums_of_digits():
     print("actual", answer)
 
     # Test 2
-    expected = 1
-    answer = fancy_sums_of_digits(100)
+    expected = 19084
+    answer = fancy_sums_of_digits(2)
     print('Test 2 expected',expected)
     print('actual', answer)
 
     # Test 3
-    expected = 1
-    answer = fancy_sums_of_digits(1000)
+    expected = 124309
+    answer = fancy_sums_of_digits(35)
     print('test 3 expected', expected)
     print('actual', answer)
 
@@ -322,8 +322,8 @@ def fancy_sums_of_digits(n):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ####################################################################
     # ------------------------------------------------------------------
-    x = (n ** 1000)
-    y = (n ** 999)
+    x = sum_of_digits(n ** 1000)
+    y = sum_of_digits(n ** 999)
     return sum_of_digits(x ** y)
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
